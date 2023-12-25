@@ -1,0 +1,12 @@
+<resources>
+  <string name="app_name">Surface Test</string>
+
+  <string name="action_toggle_dark">Toggle dark mode</string>
+
+  <string name="msg_covered_lowest">This text should be covered by colorSurfaceContainerLowest!</string>
+  <string name="msg_covered_low">This text should be covered by colorSurfaceContainerLow!</string>
+  <string name="msg_covered">This text should be covered by colorSurfaceContainer!</string>
+  <string name="msg_covered_high">This text should be covered by colorSurfaceContainerHigh!</string>
+  <string name="msg_covered_highest">This text should be covered by colorSurfaceContainerHighest!</string>
+  <string name="msg_bg_second">This background should be colorSurfaceContainerLowest!</string>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/app_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.MaterialToolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      app:title="Surface Container Issue Demo"
+      app:titleCentered="true" />
+
+  </com.google.android.material.appbar.AppBarLayout>
+
+  <FrameLayout
+    android:id="@+id/frame_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_gravity="center"
+      android:gravity="center_horizontal"
+      tools:ignore="UselessParent">
+
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          android:layout_gravity="center_vertical"
+          android:text="@string/msg_covered_lowest"
+          android:textColor="?attr/colorError" />
+
+        <View
+          android:id="@+id/cover_lowest"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+
+      </FrameLayout>
+
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          android:layout_gravity="center_vertical"
+          android:text="@string/msg_covered_low"
+          android:textColor="?attr/colorError" />
+
+        <View
+          android:id="@+id/cover_low"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+
+      </FrameLayout>
+
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          android:layout_gravity="center_vertical"
+          android:text="@string/msg_covered"
+          android:textColor="?attr/colorError" />
+
+        <View
+          android:id="@+id/cover"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+
+      </FrameLayout>
+
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          android:layout_gravity="center_vertical"
+          android:text="@string/msg_covered_high"
+          android:textColor="?attr/colorError" />
+
+        <View
+          android:id="@+id/cover_high"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+
+      </FrameLayout>
+
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_horizontal"
+          android:layout_gravity="center_vertical"
+          android:text="@string/msg_covered_highest"
+          android:textColor="?attr/colorError" />
+
+        <View
+          android:id="@+id/cover_highest"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+
+      </FrameLayout>
+
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_toggle_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/action_toggle_dark" />
+
+    </LinearLayout>
+
+  </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
